@@ -3,8 +3,8 @@ title: "My Blog"
 subtitle: "A personal blog on various topics of interest"
 name: "Reed Kimble"
 description: "A personal blog on various topics of interest"
-url: ""
-baseurl: ""
+url: "https://reedkimble.github.io"
+baseurl: "/Blog"
 repository: "ReedKimble/Blog"
 
 # Theme Settings
