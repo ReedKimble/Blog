@@ -23,7 +23,12 @@ plugins:
 # Site Author
 author:
   name: "Reed Kimble"
-  bio: "Welcome to my blog!"
+  bio: "IT Engineer, Developer, Hobbiest Scientist/Philosopher"
+  avatar: "/assets/images/avatar.png"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/reedkimble"
 
 # Reading Files
 include:
