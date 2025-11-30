@@ -5,6 +5,7 @@ date: 2025-11-30
 categories: uns
 tags: [UNS, mathematics, runtime, systems]
 layout: single
+math: true
 author_profile: true
 read_time: true
 toc: false
