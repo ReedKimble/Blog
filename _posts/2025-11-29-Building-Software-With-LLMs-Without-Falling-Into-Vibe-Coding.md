@@ -1,6 +1,6 @@
 ---
 title: "Building Software With LLMs Without Falling Into Vibe Coding"
-excerpt: "A short intro snippet for listings"
+excerpt: "How to leverage LLMs to increase productivity without losing control of your creation."
 layout: single
 author_profile: true
 read_time: true
