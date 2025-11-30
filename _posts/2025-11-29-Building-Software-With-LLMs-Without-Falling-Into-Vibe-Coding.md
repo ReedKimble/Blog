@@ -9,8 +9,6 @@ toc_label: "Contents"
 toc_icon: "list"
 ---
 
-# **Building Software With LLMs Without Falling Into Vibe Coding**
-
 ### *A Practical Guide for Creating Real, Reliable Software With AI Assistance*
 
 There’s an uncomfortable truth emerging in modern development: powerful LLMs have made it incredibly easy to generate code, and incredibly easy to generate *bad* code. Not broken code, necessarily — but shallow code, brittle code, code that was never connected to a clear design in the first place. Code that “feels” right because it looks like software, but lacks the structure and intent that make systems reliable.
