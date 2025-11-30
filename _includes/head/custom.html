@@ -1,10 +1,65 @@
-<!-- Enable MathJax v3 globally -->
+<!-- === MathJax v3 Configuration for the Universal Number Set (UNS) === -->
 <script>
   window.MathJax = {
     tex: {
+      // Recognize inline and block math
       inlineMath: [['\\(', '\\)']],
-      displayMath: [['$$', '$$']],
-      processEscapes: true
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true,
+
+      // --- UNS-specific macros and semantic coloring ---
+      macros: {
+        // --- Foundational Sets ---
+        U: "\\mathbb{U}",               // Universal Number Set
+        R: "\\mathbb{R}",               // Real numbers
+        C: "\\mathbb{C}",               // Complex numbers
+        N: "\\mathbb{N}",               // Natural numbers
+        S: "\\mathbb{S}",               // State space
+
+        // --- States and Operators ---
+        state: "\\psi",                 // generic state ψ
+        Uval: "\\operatorname{UVal}",   // UValue symbolic operator
+        Ustate: "\\operatorname{UState}",// UState symbolic operator
+        amp: "\\operatorname{amp}",     // amplitude
+        phase: "\\operatorname{phase}", // phase operator
+        norm: "\\operatorname{NORM}",   // normalization
+        merge: "\\operatorname{MERGE}", // merge operator
+        mix: "\\operatorname{MIX}",     // mixing
+        mask: "\\operatorname{MASK}",   // masking
+        lift: "\\operatorname{LIFT}",   // lifting
+        delta: "\\operatorname{DELTA}", // delta spike state
+        dot: "\\operatorname{DOT}",     // projection / inner product
+        dist: "\\operatorname{DIST}",   // distribution / metric
+        fuse: "\\operatorname{FUSE}",   // fusion operation
+        expect: "\\operatorname{EXP}",  // expectation operator
+        range: "\\operatorname{RANGE}", // range function
+
+        // --- Semantic and visual notation ---
+        novel: "\\color{#999999}{\\textit{novel}}",          // novel elements in gray italics
+        valid: "\\color{#3b82f6}{\\text{valid}}",            // valid sectors in blue
+        invalid: "\\color{#ef4444}{\\text{invalid}}",        // invalid sectors in red
+        masked: "\\color{#a855f7}{\\text{masked}}",          // masked quantities in violet
+        fused: "\\color{#10b981}{\\text{fused}}",            // fused results in green
+        uncertain: "\\color{#f59e0b}{\\text{uncertain}}",    // uncertainty indicator in amber
+        stable: "\\color{#14b8a6}{\\text{stable}}",          // stable amplitude / eigenstate
+        unstable: "\\color{#f87171}{\\text{unstable}}",      // unstable state
+
+        // --- Utility formatting ---
+        expval: "\\langle #1 \\rangle",                      // expectation ⟨x⟩
+        conj: "\\overline{#1}",                              // complex conjugate
+        trans: "#1^{\\mathrm{T}}",                           // transpose
+        adj: "#1^{\\dagger}",                                // adjoint
+        abs: "\\left| #1 \\right|",                          // absolute value or magnitude
+        normv: "\\left\\| #1 \\right\\|",                    // vector norm
+        prob: "\\mathcal{P}\\left( #1 \\right)",             // probability notation
+
+        // --- Transformations ---
+        D: "\\operatorname{D}",                              // D-transform
+        F: "\\operatorname{F}",                              // F-transform
+        T: "\\operatorname{T}",                              // temporal transform
+        Sigma: "\\Sigma",                                    // summation-like operator
+        Omega: "\\Omega",                                    // global state space
+      }
     },
     options: {
       skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
@@ -12,4 +67,5 @@
   };
 </script>
 
+<!-- Load MathJax v3 -->
 <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
