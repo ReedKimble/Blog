@@ -5,6 +5,8 @@ main:
     url: "/about/"
   - title: "LLM Workflow"
     url: "/llm-workflow/"
+  - title: "UNS"
+    url: "/UNS/"
   - title: "Projects"
     url: "/projects/"
 
@@ -19,8 +21,8 @@ docs:
     children:
       - title: "LLM Workflow"
         url: "/llm-workflow/"
-      - title: "UNS / SSP notes"
-        url: "/uns-ssp-overview/"
+      - title: "UNS"
+        url: "/uns/"
   - title: "Misc Projects"
     children:
       - title: "Projects"
