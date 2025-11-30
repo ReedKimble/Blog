@@ -1,0 +1,91 @@
+/* === UNS Accent Palette for Minimal Mistakes === */
+
+/* -- Light Mode (Default) -- */
+:root {
+  --uns-novel:     #737373;  /* neutral gray */
+  --uns-valid:     #3b82f6;  /* blue-500 */
+  --uns-invalid:   #ef4444;  /* red-500 */
+  --uns-masked:    #a855f7;  /* purple-500 */
+  --uns-fused:     #10b981;  /* green-500 */
+  --uns-uncertain: #f59e0b;  /* amber-500 */
+  --uns-stable:    #14b8a6;  /* teal-500 */
+  --uns-unstable:  #e11d48;  /* rose-600 */
+  --uns-highlight-bg: #f9fafb;
+  --uns-inline-bg: #f3f4f6;
+  --uns-inline-border: #e5e7eb;
+}
+
+/* -- Dark Mode Override -- */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --uns-novel:     #cbd5e1;  /* light gray */
+    --uns-valid:     #60a5fa;  /* blue-400 */
+    --uns-invalid:   #f87171;  /* red-400 */
+    --uns-masked:    #c084fc;  /* purple-400 */
+    --uns-fused:     #34d399;  /* green-400 */
+    --uns-uncertain: #fbbf24;  /* amber-400 */
+    --uns-stable:    #2dd4bf;  /* teal-400 */
+    --uns-unstable:  #fb7185;  /* rose-400 */
+    --uns-highlight-bg: #1f2937;
+    --uns-inline-bg: #374151;
+    --uns-inline-border: #4b5563;
+  }
+}
+
+/* === UNS Thematic Styling Rules === */
+
+/* Inline math emphasis */
+mjx-container[jax="CHTML"] {
+  font-size: 1.02em;
+  line-height: 1.4;
+}
+
+/* Inline math highlight */
+mjx-container[jax="CHTML"][display="inline"] {
+  background-color: var(--uns-inline-bg);
+  border-radius: 4px;
+  padding: 0.05em 0.2em;
+  border: 1px solid var(--uns-inline-border);
+}
+
+/* Block math layout */
+mjx-container[jax="CHTML"][display="true"] {
+  margin: 1em 0;
+  text-align: center;
+}
+
+/* Code & math color harmony */
+code, pre code {
+  background-color: var(--uns-inline-bg);
+  border-radius: 4px;
+  border: 1px solid var(--uns-inline-border);
+  color: var(--uns-stable);
+}
+
+/* Highlighted callouts for UNS terms */
+.uns-term {
+  display: inline-block;
+  font-weight: 600;
+  padding: 0.1em 0.4em;
+  border-radius: 0.3em;
+  color: #fff;
+  background-color: var(--uns-fused);
+}
+
+.uns-term.invalid   { background-color: var(--uns-invalid); }
+.uns-term.masked    { background-color: var(--uns-masked); }
+.uns-term.uncertain { background-color: var(--uns-uncertain); }
+.uns-term.stable    { background-color: var(--uns-stable); }
+.uns-term.unstable  { background-color: var(--uns-unstable); }
+
+/* Blockquote UNS style */
+blockquote {
+  border-left: 4px solid var(--uns-fused);
+  background-color: var(--uns-highlight-bg);
+  color: inherit;
+}
+
+/* Links hover effect matching UNS green */
+a:hover {
+  color: var(--uns-fused);
+}
