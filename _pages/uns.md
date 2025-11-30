@@ -7,8 +7,6 @@ sidebar:
   nav: "docs"
 ---
 
-##UNS##
-
 Posts regarding the Universal Number Set (UNS)
 
 {% for post in site.categories.uns %}
