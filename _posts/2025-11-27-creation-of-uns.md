@@ -4,6 +4,13 @@ title: "Introducing UNS: A New Foundation for Computation and Meaning"
 date: 2025-11-27
 categories: uns
 tags: [UNS, mathematics, runtime, systems]
+layout: single
+author_profile: true
+read_time: true
+toc: false
+toc_label: "Contents"
+toc_icon: "list"
+
 ---
 
 There are certain problems in computing that keep resurfacing no matter how many abstractions we build.  
