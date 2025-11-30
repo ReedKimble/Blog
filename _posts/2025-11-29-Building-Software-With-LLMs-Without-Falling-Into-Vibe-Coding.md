@@ -1,6 +1,8 @@
 ---
 title: "Building Software With LLMs Without Falling Into Vibe Coding"
 excerpt: "How to leverage LLMs to increase productivity without losing control of your creation."
+categories:
+ - llm-workflow
 layout: single
 author_profile: true
 read_time: true
