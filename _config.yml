@@ -60,3 +60,11 @@ defaults:
     values:
       layout: single
       author_profile: true
+
+# Markdown and Math Settings
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+  math_engine_opts:
+    preview: false
+  syntax_highlighter: rouge
