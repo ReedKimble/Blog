@@ -1,0 +1,29 @@
+main:
+  - title: "Home"
+    url: "/"
+  - title: "Blog"
+    url: "/blog/"
+  - title: "About"
+    url: "/about/"
+  - title: "LLM Workflow"
+    url: "/llm-workflow/"
+  - title: "Projects"
+    url: "/projects/"
+
+docs:
+  - title: "Overview"
+    children:
+      - title: "About this blog"
+        url: "/about/"
+      - title: "How to read posts"
+        url: "/using-this-blog/"
+  - title: "LLM & Coding"
+    children:
+      - title: "LLM Workflow"
+        url: "/llm-workflow/"
+      - title: "UNS / SSP notes"
+        url: "/uns-ssp-overview/"
+  - title: "Misc Projects"
+    children:
+      - title: "Projects"
+        url: "/projects/"
