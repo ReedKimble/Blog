@@ -35,9 +35,9 @@ In the classical paradigm:
 - To represent uncertainty, one must *wrap* them in probabilistic structures.
 
 Formally:
-\[
+$$
 x \in \mathbb{R}, \quad P(x) \text{ describes uncertainty about } x
-\]
+$$
 
 Computation is performed over definite numbers, and *probability* is an **external meta-layer**.
 
@@ -55,9 +55,9 @@ Here:
 - The probabilistic element (`np.random.normal`) exists outside the arithmetic itself.
 
 Mathematical expectation is externalized:
-\[
+$$
 E[f(x)] = \int f(x) P(x)\,dx
-\]
+$$
 
 This approach **requires domain restriction** and **manual exception handling** (e.g., NaN, ±∞, divide-by-zero).
 
