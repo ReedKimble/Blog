@@ -17,7 +17,7 @@ toc_icon: "list"
 
 ## Overview
 
-This test case demonstrates how the **Universal Number System (UNS)** naturally handles multimodal, uncertain data — specifically, a self-driving vehicle fusing **LIDAR** and **Vision** sensor readings with intermittent signal loss — without requiring ad hoc rules or divergent handling.
+This test case demonstrates how the **Universal Number Set (UNS)** naturally handles multimodal, uncertain data — specifically, a self-driving vehicle fusing **LIDAR** and **Vision** sensor readings with intermittent signal loss — without requiring ad hoc rules or divergent handling.
 
 In classical numerical systems, invalid readings (like divide-by-zero, NaN, or missing data) disrupt computation pipelines.  
 In UNS, these are represented seamlessly as **novel values**, which propagate through arithmetic and normalization without breaking continuity or producing infinities.
