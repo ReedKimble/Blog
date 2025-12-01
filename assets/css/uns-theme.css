@@ -160,3 +160,61 @@ a:hover {
     box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.3);
   }
 }
+
+/* === UNS Code Block and Syntax Highlighting Adjustments === */
+
+/* General code block container */
+.highlight,
+pre.highlight,
+pre code {
+  background-color: #1e1e1e !important;  /* Deep neutral gray background */
+  color: #f0f0f0 !important;             /* Light text */
+  border-radius: 6px;
+  padding: 1em;
+  overflow-x: auto;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Inline code */
+code.highlighter-rouge {
+  background-color: rgba(120, 120, 120, 0.15);
+  border: 1px solid rgba(120, 120, 120, 0.2);
+  color: #e0e0e0;
+  border-radius: 4px;
+  padding: 0.1em 0.3em;
+  font-size: 0.95em;
+}
+
+/* Syntax colors (lightly inspired by Monokai / VSCode Dark+) */
+.highlight .k     { color: #569cd6; }  /* keywords */
+.highlight .nb    { color: #4ec9b0; }  /* built-ins (e.g., np, math) */
+.highlight .s     { color: #ce9178; }  /* strings */
+.highlight .mi,
+.highlight .mf    { color: #b5cea8; }  /* numbers */
+.highlight .o     { color: #d4d4d4; }  /* operators */
+.highlight .c     { color: #6a9955; font-style: italic; } /* comments */
+.highlight .p     { color: #d4d4d4; }  /* punctuation */
+.highlight .n     { color: #9cdcfe; }  /* names / variables */
+.highlight .nf    { color: #dcdcaa; }  /* function names */
+
+/* For dark mode consistency */
+@media (prefers-color-scheme: dark) {
+  .highlight,
+  pre.highlight,
+  pre code {
+    background-color: #111827 !important; /* Slightly deeper gray */
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+
+  code.highlighter-rouge {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.12);
+    color: #f5f5f5;
+  }
+}
+
+/* Optional: small shadow for visual lift */
+.highlight {
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.3);
+}
+
