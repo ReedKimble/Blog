@@ -89,3 +89,74 @@ blockquote {
 a:hover {
   color: var(--uns-fused);
 }
+
+/* === UNS Callout Boxes (extends Minimal Mistakes notices) === */
+
+/* Base layout matching Minimal Mistakes' notice system */
+.uns-callout {
+  margin: 1.5em 0;
+  padding: 1em 1.2em;
+  border-left: 6px solid var(--uns-fused);
+  border-radius: 0.5em;
+  background-color: var(--uns-highlight-bg);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.uns-callout h4 {
+  margin-top: 0;
+  font-weight: 700;
+}
+
+/* === Variant Styles === */
+
+/* Insight — conceptual breakthroughs or core ideas */
+.uns-callout--insight {
+  border-left-color: var(--uns-fused);
+}
+.uns-callout--insight h4 {
+  color: var(--uns-fused);
+}
+
+/* Warning — modeling caveats, edge cases */
+.uns-callout--warning {
+  border-left-color: var(--uns-uncertain);
+  background-color: rgba(245, 158, 11, 0.06);
+}
+.uns-callout--warning h4 {
+  color: var(--uns-uncertain);
+}
+
+/* Error or invalid state markers */
+.uns-callout--invalid {
+  border-left-color: var(--uns-invalid);
+  background-color: rgba(239, 68, 68, 0.05);
+}
+.uns-callout--invalid h4 {
+  color: var(--uns-invalid);
+}
+
+/* Stable-state observations */
+.uns-callout--stable {
+  border-left-color: var(--uns-stable);
+  background-color: rgba(20, 184, 166, 0.05);
+}
+.uns-callout--stable h4 {
+  color: var(--uns-stable);
+}
+
+/* Novel-state commentary */
+.uns-callout--novel {
+  border-left-color: var(--uns-novel);
+  background-color: rgba(115, 115, 115, 0.05);
+}
+.uns-callout--novel h4 {
+  color: var(--uns-novel);
+}
+
+/* Dark-mode adjustment */
+@media (prefers-color-scheme: dark) {
+  .uns-callout {
+    background-color: var(--uns-inline-bg);
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.3);
+  }
+}
