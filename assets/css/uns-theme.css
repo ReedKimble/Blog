@@ -373,3 +373,19 @@ code.highlighter-rouge {
 .highlight pre::-webkit-scrollbar-thumb:hover {
   background-color: rgba(255, 255, 255, 0.4);
 }
+
+/* Fallback for plain <pre><code class="language-uns"> blocks */
+pre code.language-uns {
+  display: block;
+  font-family: "Fira Code", "JetBrains Mono", monospace;
+  font-size: 0.95em;
+  line-height: 1.55;
+  background: var(--uns-bg, #111827);
+  color: var(--uns-fg, #f3f4f6);
+  padding: 1em 1.2em;
+  margin: 1em 0;
+  border-radius: 8px;
+  overflow-x: auto;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  white-space: pre; /* critical fix for overlap */
+}
