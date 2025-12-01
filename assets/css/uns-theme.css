@@ -318,3 +318,61 @@ figure.highlight pre {
   padding: 1em 1.2em;
   line-height: inherit;
 }
+
+/* === FINAL CODE BLOCK LAYOUT REPAIR === */
+/* Goal: restore Rouge's natural table layout and baseline rhythm */
+
+figure.highlight,
+div.highlight {
+  display: block;
+  overflow-x: auto;
+  padding: 0;
+  margin: 1em 0;
+}
+
+/* Keep Rouge table cells intact and vertically aligned */
+.highlight table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.highlight td {
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline !important;
+}
+
+/* Let <pre> control spacing, not <code> */
+.highlight pre {
+  margin: 0;
+  padding: 1em 1.2em;
+  line-height: 1.45;         /* 🧭 slightly tighter but even */
+  font-family: "Fira Code", "JetBrains Mono", Consolas, monospace;
+  white-space: pre;
+  overflow-x: auto;
+}
+
+/* Prevent nested <code> elements from overriding line height */
+.highlight pre code {
+  display: inline;           /* revert to Rouge default */
+  line-height: inherit;
+  white-space: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: inherit;
+}
+
+/* Inline code stays boxy and legible */
+code.highlighter-rouge {
+  display: inline-block;
+  vertical-align: baseline;
+  line-height: 1.2;
+}
+
+/* Optional: improve readability for small code blocks */
+.highlight pre,
+.highlight td.code pre {
+  font-size: 0.96em;
+}
