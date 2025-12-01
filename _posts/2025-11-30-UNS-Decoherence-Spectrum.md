@@ -47,13 +47,13 @@ Particles exhibit interference patterns — wave behavior — when unobserved,
 but discrete impacts — particle behavior — when measured.
 
 UNS algebra reformulates this *wave–particle duality* as an **expressive inversion** between two representational bases:
-[
+$$
 U(x,t) \in \mathbb{U} :
 \begin{cases}
 U(x,t) = \text{Spatial Amplitude Representation},\
 \mathcal{F}(U)(k,t) = \text{Spectral (Wave) Representation}.
 \end{cases}
-]
+$$
 No collapse occurs; the apparent probabilistic behavior is epistemic, not stochastic.
 
 ---
@@ -64,9 +64,9 @@ No collapse occurs; the apparent probabilistic behavior is epistemic, not stocha
 
 The Universal State (UState) ( U_0 ) is defined as a normalized Gaussian centered between two apertures:
 
-[
+$$
 U_0(x) = \mathcal{N} \Big[ e^{-\frac{(x + d/2)^2}{2\sigma^2}} + e^{-\frac{(x - d/2)^2}{2\sigma^2}} \Big],
-]
+$$
 where:
 
 * ( d ) — slit separation,
@@ -78,11 +78,11 @@ where:
 ### 3.2 Slit Mask Operator
 
 The **slit mask** ( M(x, t) ) controls aperture openness dynamically:
-[
+$$
 M(x,t) = \alpha(t) \Big[
 e^{-\frac{(x + d/2)^2}{2\sigma_s^2}} + e^{-\frac{(x - d/2)^2}{2\sigma_s^2}}
 \Big],
-]
+$$
 where ( \alpha(t) \in [0,1] ) represents **temporal aperture modulation**.
 
 ---
@@ -90,9 +90,9 @@ where ( \alpha(t) \in [0,1] ) represents **temporal aperture modulation**.
 ### 3.3 Propagation Operator
 
 Wave evolution is modeled using the UNS propagator:
-[
+$$
 U(x, t+\Delta t) = \operatorname{D}\big( U(x, t), \Delta t, k, z \big),
-]
+$$
 where:
 
 * ( \operatorname{D} ) is the **deterministic diffraction transform**,
@@ -100,9 +100,9 @@ where:
 * ( z ) is propagation distance.
 
 This operator mirrors the Fresnel transform:
-[
+$$
 \operatorname{D}(U) = \mathcal{F}^{-1}!\big[\mathcal{F}(U) \cdot e^{-i \pi k f^2 z}\big].
-]
+$$
 
 ---
 
@@ -111,29 +111,29 @@ This operator mirrors the Fresnel transform:
 ### 4.1 Measurement Projection Operator
 
 Observation is modeled deterministically via **projection**:
-[
+$$
 \operatorname{MEASURE}(U, \Pi_i) = {\Pi_i U, w_i},
-]
+$$
 with:
-[
+$$
 w_i = \frac{|\Pi_i U|}{\sum_j |\Pi_j U|}, \quad \text{and} \quad \sum_i w_i = 1.
-]
+$$
 No collapse occurs; the post-measurement state is the weighted **MERGE** of projections:
-[
+$$
 \tilde{U} = \operatorname{MERGE}({\Pi_i U}, {w_i}) = \sum_i w_i (\Pi_i U).
-]
+$$
 
 ---
 
 ### 4.2 Temporal Measurement Evolution
 
 The system evolves continuously according to:
-[
+$$
 U_{t+1} = \operatorname{MERGE}!\Big(
 \operatorname{MASK}(t) \cdot \operatorname{D}(U_t),;
 \operatorname{MEASURE}(U_t)
 \Big).
-]
+$$
 
 ---
 
@@ -154,26 +154,26 @@ U_{t+1} = \operatorname{MERGE}!\Big(
 ### 5.1 Epistemic Entropy Operator
 
 Entropy is defined purely on **deterministic amplitude distributions**:
-[
+$$
 S_U = -\sum_i |U_i|^2 \ln(|U_i|^2 + \varepsilon),
-]
+$$
 where ( \varepsilon ) prevents singularity at zero amplitude.
 
 Measurement entropy ( S_M ) uses detector weights:
-[
+$$
 S_M = -\sum_i w_i \ln(w_i + \varepsilon).
-]
+$$
 
 ---
 
 ### 5.2 Coherence Operator
 
 Coherence quantifies **phase alignment** between spatial and spectral representations:
-[
+$$
 C_U =
 \frac{|\langle U, \mathcal{F}(U) \rangle|^2}{
 |U|^2 , |\mathcal{F}(U)|^2 }.
-]
+$$
 
 This expresses how *well-organized* the field’s phase relationships remain across domains.
 
@@ -184,16 +184,16 @@ This expresses how *well-organized* the field’s phase relationships remain acr
 ### 6.1 Definition
 
 The **UNS Decoherence Spectrum** captures the co-evolution of entropy and coherence:
-[
+$$
 \text{Decoherence Spectrum: }
 \mathcal{D}(t) = { S_U(t), S_M(t), C_U(t) }.
-]
+$$
 
 ### 6.2 Governing Dynamics
 
-[
+$$
 \frac{dC_U}{dt} \approx -f\big(S_U, S_M\big),
-]
+$$
 meaning **loss of coherence is proportional to epistemic entropy growth** —
 not to stochastic collapse, but to deterministic structural dispersion.
 
@@ -254,9 +254,9 @@ Unlike quantum mechanics, where measurement induces non-deterministic collapse,
 the UNS framework treats measurement as an **epistemic redistribution** of algebraic amplitude.
 
 Decoherence, then, is the **deterministic flattening** of structure under continuous transformation:
-[
+$$
 C_U(t) \downarrow \iff S_U(t), S_M(t) \uparrow.
-]
+$$
 
 ### 8.2 Conceptual Summary
 
