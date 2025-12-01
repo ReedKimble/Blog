@@ -376,3 +376,78 @@ code.highlighter-rouge {
 .highlight td.code pre {
   font-size: 0.96em;
 }
+
+/* === FINAL UNIFICATION PATCH === */
+/* Applies consistent spacing and layout to all Rouge + Markdown code blocks */
+
+/* General baseline normalization */
+.highlight pre,
+.highlight code,
+div.highlight pre,
+div.highlight code,
+figure.highlight pre,
+figure.highlight code {
+  font-family: "Fira Code", "JetBrains Mono", Consolas, monospace;
+  font-size: 0.95em;
+  line-height: 1.5 !important;     /* consistent vertical rhythm */
+  white-space: pre !important;
+  word-break: normal;
+  overflow-x: auto;
+  background: none;
+  border: none;
+  color: inherit;
+  display: block;
+}
+
+/* Apply padding only once at the pre level */
+.highlight pre {
+  padding: 1em 1.2em;
+  margin: 0;
+  border-radius: 8px;
+}
+
+/* Light mode refinement */
+@media (prefers-color-scheme: light) {
+  div.highlight pre,
+  figure.highlight pre {
+    background-color: #f9fafb !important;
+    border: 1px solid #e5e7eb !important;
+    color: #1e293b;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  }
+}
+
+/* Dark mode refinement */
+@media (prefers-color-scheme: dark) {
+  div.highlight pre,
+  figure.highlight pre {
+    background-color: #111827 !important;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: #f3f4f6;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  }
+}
+
+/* Ensure inline code unaffected */
+p code.highlighter-rouge,
+li code.highlighter-rouge,
+span code.highlighter-rouge {
+  display: inline-block;
+  vertical-align: baseline;
+  line-height: 1.2;
+}
+
+/* Keep scrollbar aligned */
+div.highlight pre::-webkit-scrollbar,
+figure.highlight pre::-webkit-scrollbar {
+  height: 0.5em;
+}
+div.highlight pre::-webkit-scrollbar-thumb,
+figure.highlight pre::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}
+div.highlight pre::-webkit-scrollbar-thumb:hover,
+figure.highlight pre::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+}
