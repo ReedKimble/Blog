@@ -68,3 +68,10 @@ kramdown:
   math_engine_opts:
     preview: false
   syntax_highlighter: rouge
+
+rouge:
+  guess_lang: false
+  default_lang: text
+  # register "uns" as a recognized token alias for JavaScript-like syntax
+  languages:
+    uns: javascript
