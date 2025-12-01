@@ -275,3 +275,46 @@ figure.highlight,
     background-color: rgba(255, 255, 255, 0.35);
   }
 }
+
+/* === FINAL PATCH: Fix Code Line Overlap in Rouge Tables === */
+
+/* Normalize code block structure */
+figure.highlight,
+div.highlight,
+.highlight table,
+.highlight td,
+.highlight pre,
+.highlight code {
+  line-height: 1.65 !important;     /* consistent vertical rhythm */
+  vertical-align: top !important;
+}
+
+/* Force code content to flow line-by-line */
+.highlight code {
+  display: block !important;
+  white-space: pre !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+}
+
+/* Handle nested <code> inside <td class="code"> specifically */
+.highlight td.code pre code {
+  display: inline-block !important; /* fixes extra blank lines */
+  width: 100%;
+  line-height: inherit;
+}
+
+/* Prevent table cell compression */
+.highlight table td {
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+}
+
+/* Guarantee consistent scrollbar alignment */
+figure.highlight pre {
+  display: block;
+  margin: 0;
+  padding: 1em 1.2em;
+  line-height: inherit;
+}
