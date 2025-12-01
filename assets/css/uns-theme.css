@@ -15,6 +15,22 @@
   --uns-inline-border: #e5e7eb;
 }
 
+@media (prefers-color-scheme: light) {
+  .highlight,
+  pre.highlight,
+  pre code {
+    background-color: #f9fafb !important;
+    color: #1e293b !important;
+    border: 1px solid #e5e7eb;
+  }
+
+  .highlight .k     { color: #1d4ed8; }
+  .highlight .s     { color: #dc2626; }
+  .highlight .mi,
+  .highlight .mf    { color: #059669; }
+  .highlight .c     { color: #6b7280; font-style: italic; }
+}
+
 /* -- Dark Mode Override -- */
 @media (prefers-color-scheme: dark) {
   :root {
