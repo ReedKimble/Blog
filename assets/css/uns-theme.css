@@ -377,10 +377,10 @@ code.highlighter-rouge {
   font-size: 0.96em;
 }
 
-/* === FINAL UNIFICATION PATCH === */
-/* Applies consistent spacing and layout to all Rouge + Markdown code blocks */
+/* === UNS CODEBLOCK RENDERING FIX (FINAL BUILD) === */
+/* Resolves overlap between <figure.highlight> and <div.highlight> render paths */
 
-/* General baseline normalization */
+/* Reset conflicting inherited properties */
 .highlight pre,
 .highlight code,
 div.highlight pre,
@@ -389,65 +389,88 @@ figure.highlight pre,
 figure.highlight code {
   font-family: "Fira Code", "JetBrains Mono", Consolas, monospace;
   font-size: 0.95em;
-  line-height: 1.5 !important;     /* consistent vertical rhythm */
-  white-space: pre !important;
-  word-break: normal;
-  overflow-x: auto;
   background: none;
   border: none;
   color: inherit;
-  display: block;
+  margin: 0;
+  padding: 0;
+  line-height: 1.55 !important; /* ✅ Single consistent rhythm */
+  white-space: pre !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
 }
 
-/* Apply padding only once at the pre level */
+/* Distinguish <pre> as the layout container */
 .highlight pre {
-  padding: 1em 1.2em;
-  margin: 0;
+  display: block !important;
+  padding: 1em 1.2em !important;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 0.75em 0;
+  box-sizing: border-box;
+}
+
+/* Restore <code> as inline text within <pre> (prevents doubled line height) */
+.highlight pre code {
+  display: inline !important;
+  line-height: inherit;
+  white-space: inherit;
+}
+
+/* Prevent theme interference on div wrappers */
+div.highlight {
+  display: block !important;
+  overflow-x: auto !important;
+  padding: 0 !important;
+  margin: 1em 0 !important;
   border-radius: 8px;
 }
 
-/* Light mode refinement */
+/* --- LIGHT MODE --- */
 @media (prefers-color-scheme: light) {
-  div.highlight pre,
-  figure.highlight pre {
+  figure.highlight,
+  div.highlight {
     background-color: #f9fafb !important;
     border: 1px solid #e5e7eb !important;
-    color: #1e293b;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
   }
-}
-
-/* Dark mode refinement */
-@media (prefers-color-scheme: dark) {
-  div.highlight pre,
-  figure.highlight pre {
-    background-color: #111827 !important;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    color: #f3f4f6;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  .highlight pre {
+    color: #1e293b !important;
   }
 }
 
-/* Ensure inline code unaffected */
-p code.highlighter-rouge,
-li code.highlighter-rouge,
-span code.highlighter-rouge {
-  display: inline-block;
-  vertical-align: baseline;
-  line-height: 1.2;
+/* --- DARK MODE --- */
+@media (prefers-color-scheme: dark) {
+  figure.highlight,
+  div.highlight {
+    background-color: #111827 !important;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  }
+  .highlight pre {
+    color: #f3f4f6 !important;
+  }
 }
 
-/* Keep scrollbar aligned */
-div.highlight pre::-webkit-scrollbar,
-figure.highlight pre::-webkit-scrollbar {
+/* Inline code (not blocks) */
+code.highlighter-rouge {
+  display: inline-block;
+  line-height: 1.2;
+  background-color: var(--uns-inline-bg) !important;
+  border: 1px solid var(--uns-inline-border) !important;
+  color: var(--uns-stable) !important;
+  padding: 0.15em 0.3em;
+  border-radius: 4px;
+}
+
+/* Scrollbar consistency */
+.highlight pre::-webkit-scrollbar {
   height: 0.5em;
 }
-div.highlight pre::-webkit-scrollbar-thumb,
-figure.highlight pre::-webkit-scrollbar-thumb {
-  background-color: rgba(255, 255, 255, 0.2);
+.highlight pre::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.25);
   border-radius: 3px;
 }
-div.highlight pre::-webkit-scrollbar-thumb:hover,
-figure.highlight pre::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(255, 255, 255, 0.35);
+.highlight pre::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.4);
 }
