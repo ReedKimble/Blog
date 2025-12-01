@@ -19,14 +19,14 @@ This document exercises all of the **MathJax macros**, **semantic colors**, and 
 
 | Semantic | Macro | Meaning | Example |
 |-----------|--------|----------|----------|
-| Novel | `\novel` | Undefined / Novel value | \\( \\novel \\) |
-| Valid | `\valid` | Reliable / valid sector | \\( \\valid \\) |
-| Invalid | `\invalid` | Faulty or missing sector | \\( \\invalid \\) |
-| Masked | `\masked` | Reliability masking | \\( \\masked \\) |
-| Fused | `\fused` | Combined sensor fusion result | \\( \\fused \\) |
-| Uncertain | `\uncertain` | Indeterminate or partially defined value | \\( \\uncertain \\) |
-| Stable | `\stable` | Robust / convergent result | \\( \\stable \\) |
-| Unstable | `\unstable` | Divergent or chaotic result | \\( \\unstable \\) |
+| Novel | `\novel` | Undefined / Novel value | \( \novel \) |
+| Valid | `\valid` | Reliable / valid sector | \( \valid \) |
+| Invalid | `\invalid` | Faulty or missing sector | \( \invalid \) |
+| Masked | `\masked` | Reliability masking | \( \masked \) |
+| Fused | `\fused` | Combined sensor fusion result | \( \fused \) |
+| Uncertain | `\uncertain` | Indeterminate or partially defined value | \( \uncertain \) |
+| Stable | `\stable` | Robust / convergent result | \( \stable \) |
+| Unstable | `\unstable` | Divergent or chaotic result | \( \unstable \) |
 
 Each color automatically adjusts between **light** and **dark** modes via your UNS color palette.
 
@@ -134,3 +134,43 @@ Here’s an inline code snippet side by side with math:
 ```python
 # UNS-style normalization
 normed = NORM(MASK(LIDAR))
+```
+
+and the equivalent mathematical form:
+
+\\( \\norm(\\mask(L)) = 1 \\)
+
+Both use harmonized background and border tones across light and dark themes.
+
+---
+
+## 📘 Blockquote Test
+
+> UNS redefines completeness by allowing *undefined values* to exist **inside the number system itself** rather than outside it.
+
+---
+
+## 🌓 Dark Mode Verification
+
+Switch your system theme between light and dark.  
+All elements — math, callouts, code, and inline highlights — should dynamically recolor to maintain legibility and stylistic balance.
+
+---
+
+## ✅ Conclusion
+
+This page demonstrates the **complete UNS visual integration layer**:
+- Color-coded semantics  
+- Dark/light adaptive palette  
+- MathJax macros and structure  
+- Consistent Minimal Mistakes alignment  
+- Responsive callouts for concept clarity  
+
+You can now use these tools to build rich, academic-quality UNS posts that both look and *feel* mathematically expressive.
+
+---
+
+**Document:** `_pages/uns-demo.md`  
+**Author:** UNS Exploration Assistant  
+**Date:** {{ site.time | date: "%Y-%m-%d" }}  
+**Version:** 1.0  
