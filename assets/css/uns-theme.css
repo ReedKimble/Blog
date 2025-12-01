@@ -276,157 +276,56 @@ figure.highlight,
   }
 }
 
-/* === FINAL PATCH: Fix Code Line Overlap in Rouge Tables === */
-
-/* Normalize code block structure */
-figure.highlight,
-div.highlight,
-.highlight table,
-.highlight td,
-.highlight pre,
-.highlight code {
-  line-height: 1.65 !important;     /* consistent vertical rhythm */
-  vertical-align: top !important;
-}
-
-/* Force code content to flow line-by-line */
-.highlight code {
-  display: block !important;
-  white-space: pre !important;
-  overflow-wrap: normal !important;
-  word-break: normal !important;
-}
-
-/* Handle nested <code> inside <td class="code"> specifically */
-.highlight td.code pre code {
-  display: inline-block !important; /* fixes extra blank lines */
-  width: 100%;
-  line-height: inherit;
-}
-
-/* Prevent table cell compression */
-.highlight table td {
-  padding: 0 !important;
-  margin: 0 !important;
-  border: none !important;
-}
-
-/* Guarantee consistent scrollbar alignment */
-figure.highlight pre {
-  display: block;
-  margin: 0;
-  padding: 1em 1.2em;
-  line-height: inherit;
-}
-
-/* === FINAL CODE BLOCK LAYOUT REPAIR === */
-/* Goal: restore Rouge's natural table layout and baseline rhythm */
+/* === FINAL UNS CODEBLOCK FIX (2025 CLEAN BUILD) === */
+/* Resolves overlap for both <figure.highlight> and <div.highlight> */
 
 figure.highlight,
 div.highlight {
   display: block;
   overflow-x: auto;
-  padding: 0;
   margin: 1em 0;
+  border-radius: 8px;
 }
 
-/* Keep Rouge table cells intact and vertically aligned */
+/* Normal pre/code relationship */
+.highlight pre {
+  font-family: "Fira Code", "JetBrains Mono", Consolas, monospace;
+  font-size: 0.95em;
+  line-height: 1.55;
+  white-space: pre;
+  overflow-x: auto;
+  padding: 1em 1.2em;
+  margin: 0;
+  border-radius: 8px;
+  border: 1px solid var(--uns-inline-border);
+  box-sizing: border-box;
+}
+
+/* Code should be inline inside <pre> */
+.highlight pre code {
+  display: inline;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  line-height: inherit;
+  white-space: inherit;
+  color: inherit;
+}
+
+/* Table layout (used by Rouge for line numbering) */
 .highlight table {
   border-collapse: collapse;
   width: 100%;
 }
-
-.highlight td {
+.highlight table td {
   padding: 0;
   margin: 0;
-  vertical-align: baseline !important;
-}
-
-/* Let <pre> control spacing, not <code> */
-.highlight pre {
-  margin: 0;
-  padding: 1em 1.2em;
-  line-height: 1.45;         /* 🧭 slightly tighter but even */
-  font-family: "Fira Code", "JetBrains Mono", Consolas, monospace;
-  white-space: pre;
-  overflow-x: auto;
-}
-
-/* Prevent nested <code> elements from overriding line height */
-.highlight pre code {
-  display: inline;           /* revert to Rouge default */
-  line-height: inherit;
-  white-space: inherit;
-  background: none;
+  vertical-align: top;
   border: none;
-  padding: 0;
-  margin: 0;
-  color: inherit;
 }
 
-/* Inline code stays boxy and legible */
-code.highlighter-rouge {
-  display: inline-block;
-  vertical-align: baseline;
-  line-height: 1.2;
-}
-
-/* Optional: improve readability for small code blocks */
-.highlight pre,
-.highlight td.code pre {
-  font-size: 0.96em;
-}
-
-/* === UNS CODEBLOCK RENDERING FIX (FINAL BUILD) === */
-/* Resolves overlap between <figure.highlight> and <div.highlight> render paths */
-
-/* Reset conflicting inherited properties */
-.highlight pre,
-.highlight code,
-div.highlight pre,
-div.highlight code,
-figure.highlight pre,
-figure.highlight code {
-  font-family: "Fira Code", "JetBrains Mono", Consolas, monospace;
-  font-size: 0.95em;
-  background: none;
-  border: none;
-  color: inherit;
-  margin: 0;
-  padding: 0;
-  line-height: 1.55 !important; /* ✅ Single consistent rhythm */
-  white-space: pre !important;
-  overflow-wrap: normal !important;
-  word-break: normal !important;
-}
-
-/* Distinguish <pre> as the layout container */
-.highlight pre {
-  display: block !important;
-  padding: 1em 1.2em !important;
-  border-radius: 8px;
-  overflow-x: auto;
-  margin: 0.75em 0;
-  box-sizing: border-box;
-}
-
-/* Restore <code> as inline text within <pre> (prevents doubled line height) */
-.highlight pre code {
-  display: inline !important;
-  line-height: inherit;
-  white-space: inherit;
-}
-
-/* Prevent theme interference on div wrappers */
-div.highlight {
-  display: block !important;
-  overflow-x: auto !important;
-  padding: 0 !important;
-  margin: 1em 0 !important;
-  border-radius: 8px;
-}
-
-/* --- LIGHT MODE --- */
+/* Light theme */
 @media (prefers-color-scheme: light) {
   figure.highlight,
   div.highlight {
@@ -439,7 +338,7 @@ div.highlight {
   }
 }
 
-/* --- DARK MODE --- */
+/* Dark theme */
 @media (prefers-color-scheme: dark) {
   figure.highlight,
   div.highlight {
@@ -452,7 +351,7 @@ div.highlight {
   }
 }
 
-/* Inline code (not blocks) */
+/* Inline code only (no blocks) */
 code.highlighter-rouge {
   display: inline-block;
   line-height: 1.2;
@@ -463,7 +362,7 @@ code.highlighter-rouge {
   border-radius: 4px;
 }
 
-/* Scrollbar consistency */
+/* Scrollbars */
 .highlight pre::-webkit-scrollbar {
   height: 0.5em;
 }
