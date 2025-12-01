@@ -12,7 +12,8 @@ overlay_color: "#000"
 overlay_filter: "0.5"
 overlay_image: "/assets/images/uns_header_dark.jpg"
 caption: "UNS Wave–Particle Simulation (2025)"
-----------------------------------------------
+
+---
 
 # Expressive Inversion Between Classical Mathematics and the Universal Number Set (UNS)
 
