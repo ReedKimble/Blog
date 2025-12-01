@@ -1,37 +1,32 @@
-/* === UNS Accent Palette for Minimal Mistakes === */
+/* === UNS Theme for Minimal Mistakes === */
+/* Version: Final Optimized Build */
+
+/* -----------------------------
+   ACCENT PALETTE
+----------------------------- */
 
 /* -- Light Mode (Default) -- */
 :root {
-  --uns-novel:     #737373;  /* neutral gray */
-  --uns-valid:     #3b82f6;  /* blue-500 */
-  --uns-invalid:   #ef4444;  /* red-500 */
-  --uns-masked:    #a855f7;  /* purple-500 */
-  --uns-fused:     #10b981;  /* green-500 */
-  --uns-uncertain: #f59e0b;  /* amber-500 */
-  --uns-stable:    #14b8a6;  /* teal-500 */
-  --uns-unstable:  #e11d48;  /* rose-600 */
+  --uns-novel:     #737373;   /* neutral gray */
+  --uns-valid:     #3b82f6;   /* blue-500 */
+  --uns-invalid:   #ef4444;   /* red-500 */
+  --uns-masked:    #a855f7;   /* purple-500 */
+  --uns-fused:     #10b981;   /* green-500 */
+  --uns-uncertain: #f59e0b;   /* amber-500 */
+  --uns-stable:    #14b8a6;   /* teal-500 */
+  --uns-unstable:  #e11d48;   /* rose-600 */
   --uns-highlight-bg: #f9fafb;
   --uns-inline-bg: #f3f4f6;
   --uns-inline-border: #e5e7eb;
+
+  /* Future UNS code color hooks */
+  --uns-keyword: var(--uns-valid);
+  --uns-number:  var(--uns-stable);
+  --uns-string:  var(--uns-invalid);
+  --uns-comment: var(--uns-novel);
 }
 
-@media (prefers-color-scheme: light) {
-  .highlight,
-  pre.highlight,
-  pre code {
-    background-color: #f9fafb !important;
-    color: #1e293b !important;
-    border: 1px solid #e5e7eb;
-  }
-
-  .highlight .k     { color: #1d4ed8; }
-  .highlight .s     { color: #dc2626; }
-  .highlight .mi,
-  .highlight .mf    { color: #059669; }
-  .highlight .c     { color: #6b7280; font-style: italic; }
-}
-
-/* -- Dark Mode Override -- */
+/* -- Dark Mode Overrides -- */
 @media (prefers-color-scheme: dark) {
   :root {
     --uns-novel:     #cbd5e1;  /* light gray */
@@ -48,15 +43,16 @@
   }
 }
 
-/* === UNS Thematic Styling Rules === */
+/* -----------------------------
+   MATHJAX + INLINE ELEMENTS
+----------------------------- */
 
-/* Inline math emphasis */
+/* Inline math */
 mjx-container[jax="CHTML"] {
   font-size: 1.02em;
   line-height: 1.4;
 }
 
-/* Inline math highlight */
 mjx-container[jax="CHTML"][display="inline"] {
   background-color: var(--uns-inline-bg);
   border-radius: 4px;
@@ -64,13 +60,12 @@ mjx-container[jax="CHTML"][display="inline"] {
   border: 1px solid var(--uns-inline-border);
 }
 
-/* Block math layout */
 mjx-container[jax="CHTML"][display="true"] {
   margin: 1em 0;
   text-align: center;
 }
 
-/* Code & math color harmony */
+/* Code and math visual harmony */
 code, pre code {
   background-color: var(--uns-inline-bg);
   border-radius: 4px;
@@ -78,7 +73,24 @@ code, pre code {
   color: var(--uns-stable);
 }
 
-/* Highlighted callouts for UNS terms */
+/* Inline code emphasis (general) */
+p code.highlighter-rouge,
+li code.highlighter-rouge,
+span code.highlighter-rouge {
+  font-family: "Fira Code", "JetBrains Mono", Consolas, monospace;
+  background-color: var(--uns-inline-bg) !important;
+  color: var(--uns-stable) !important;
+  border: 1px solid var(--uns-inline-border) !important;
+  padding: 0.15em 0.3em;
+  border-radius: 4px;
+  font-size: 0.95em;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* -----------------------------
+   UNS CALLS & CALLOUTS
+----------------------------- */
+
 .uns-term {
   display: inline-block;
   font-weight: 600;
@@ -94,21 +106,18 @@ code, pre code {
 .uns-term.stable    { background-color: var(--uns-stable); }
 .uns-term.unstable  { background-color: var(--uns-unstable); }
 
-/* Blockquote UNS style */
 blockquote {
   border-left: 4px solid var(--uns-fused);
   background-color: var(--uns-highlight-bg);
   color: inherit;
 }
 
-/* Links hover effect matching UNS green */
+/* Links hover */
 a:hover {
   color: var(--uns-fused);
 }
 
-/* === UNS Callout Boxes (extends Minimal Mistakes notices) === */
-
-/* Base layout matching Minimal Mistakes' notice system */
+/* Callout boxes */
 .uns-callout {
   margin: 1.5em 0;
   padding: 1em 1.2em;
@@ -116,6 +125,7 @@ a:hover {
   border-radius: 0.5em;
   background-color: var(--uns-highlight-bg);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  transition: background-color 0.25s ease, border-color 0.25s ease;
 }
 
 .uns-callout h4 {
@@ -123,53 +133,33 @@ a:hover {
   font-weight: 700;
 }
 
-/* === Variant Styles === */
+.uns-callout--insight { border-left-color: var(--uns-fused); }
+.uns-callout--insight h4 { color: var(--uns-fused); }
 
-/* Insight — conceptual breakthroughs or core ideas */
-.uns-callout--insight {
-  border-left-color: var(--uns-fused);
-}
-.uns-callout--insight h4 {
-  color: var(--uns-fused);
-}
-
-/* Warning — modeling caveats, edge cases */
 .uns-callout--warning {
   border-left-color: var(--uns-uncertain);
   background-color: rgba(245, 158, 11, 0.06);
 }
-.uns-callout--warning h4 {
-  color: var(--uns-uncertain);
-}
+.uns-callout--warning h4 { color: var(--uns-uncertain); }
 
-/* Error or invalid state markers */
 .uns-callout--invalid {
   border-left-color: var(--uns-invalid);
   background-color: rgba(239, 68, 68, 0.05);
 }
-.uns-callout--invalid h4 {
-  color: var(--uns-invalid);
-}
+.uns-callout--invalid h4 { color: var(--uns-invalid); }
 
-/* Stable-state observations */
 .uns-callout--stable {
   border-left-color: var(--uns-stable);
   background-color: rgba(20, 184, 166, 0.05);
 }
-.uns-callout--stable h4 {
-  color: var(--uns-stable);
-}
+.uns-callout--stable h4 { color: var(--uns-stable); }
 
-/* Novel-state commentary */
 .uns-callout--novel {
   border-left-color: var(--uns-novel);
   background-color: rgba(115, 115, 115, 0.05);
 }
-.uns-callout--novel h4 {
-  color: var(--uns-novel);
-}
+.uns-callout--novel h4 { color: var(--uns-novel); }
 
-/* Dark-mode adjustment */
 @media (prefers-color-scheme: dark) {
   .uns-callout {
     background-color: var(--uns-inline-bg);
@@ -177,102 +167,111 @@ a:hover {
   }
 }
 
-/* === UNS Code Block and Syntax Highlighting (Unified) === */
+/* -----------------------------
+   CODE BLOCKS (Unified Fix)
+----------------------------- */
 
-/* Base code block styling — shared defaults */
+/* Base setup */
 .highlight,
 pre.highlight,
 pre code {
   font-family: "Fira Code", "JetBrains Mono", Consolas, monospace;
   font-size: 0.95em;
-  line-height: 1.55;
+  line-height: 1.65;
   border-radius: 8px;
   padding: 1em 1.2em;
   overflow-x: auto;
   border: 1px solid transparent;
-  box-shadow: none;
+  margin: 1em 0;
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
 }
 
-/* Inline code */
-code.highlighter-rouge {
-  font-family: "Fira Code", "JetBrains Mono", Consolas, monospace;
-  line-height: 1.3;
-  padding: 0.15em 0.35em;
-  border-radius: 4px;
-  font-size: 0.95em;
-  border: 1px solid transparent;
+/* Rouge table reset */
+.highlight > pre,
+div.highlight,
+figure.highlight,
+.highlight table,
+.highlight tr,
+.highlight td {
+  background: inherit !important;
+  border: none !important;
+  padding: 0;
+  margin: 0;
 }
 
-/* --- Light Mode --- */
+/* Line number + code cell alignment */
+.highlight pre,
+.highlight td.code pre {
+  white-space: pre-wrap;
+  word-break: normal;
+  tab-size: 4;
+}
+
+/* --- LIGHT MODE --- */
 @media (prefers-color-scheme: light) {
-  .highlight,
-  pre.highlight,
-  pre code {
-    background-color: #f9fafb !important; /* Soft white */
-    color: #1e293b !important;            /* Slate text */
-    border-color: #e5e7eb;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  figure.highlight,
+  div.highlight {
+    background-color: #f9fafb !important;
+    border: 1px solid #e5e7eb !important;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
   }
 
-  code.highlighter-rouge {
-    background-color: #f3f4f6;
-    border-color: #e5e7eb;
-    color: #1e293b;
+  .highlight pre,
+  .highlight td.code pre {
+    color: #1e293b !important;
   }
 
-  /* Light-mode syntax palette (VSCode light) */
-  .highlight .k     { color: #1d4ed8; }   /* keyword - blue */
-  .highlight .nb    { color: #047857; }   /* built-ins */
-  .highlight .s     { color: #dc2626; }   /* strings - red */
+  /* Improved readability (WCAG contrast) */
+  .highlight .c  { color: #4b5563; font-style: italic; } /* comments */
+  .highlight .k  { color: #1d4ed8; font-weight: 600; }   /* keywords */
+  .highlight .s  { color: #b91c1c; }                     /* strings */
   .highlight .mi,
-  .highlight .mf    { color: #059669; }   /* numbers - green */
-  .highlight .c     { color: #6b7280; font-style: italic; } /* comments */
-  .highlight .o     { color: #111827; }   /* operators */
-  .highlight .nf    { color: #9333ea; }   /* functions */
+  .highlight .mf { color: #059669; }                     /* numbers */
+  .highlight .nb { color: #0f766e; }                     /* built-ins */
+  .highlight .nf { color: #7c3aed; }                     /* functions */
+  .highlight .o  { color: #111827; }                     /* operators */
   .highlight .p,
-  .highlight .n     { color: #1e293b; }   /* names, punctuation */
+  .highlight .n  { color: #1e293b; }                     /* names */
 }
 
-/* --- Dark Mode --- */
+/* --- DARK MODE --- */
 @media (prefers-color-scheme: dark) {
-  .highlight,
-  pre.highlight,
-  pre code {
-    background-color: #1e1e1e !important; /* Neutral deep gray */
-    color: #f0f0f0 !important;
-    border-color: rgba(255, 255, 255, 0.1);
+  figure.highlight,
+  div.highlight {
+    background-color: #111827 !important;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
   }
 
-  code.highlighter-rouge {
-    background-color: rgba(255, 255, 255, 0.08);
-    border-color: rgba(255, 255, 255, 0.12);
-    color: #f5f5f5;
+  .highlight pre,
+  .highlight td.code pre {
+    color: #f3f4f6 !important;
   }
 
-  /* Dark-mode syntax palette (VSCode Dark+) */
-  .highlight .k     { color: #569cd6; }
-  .highlight .nb    { color: #4ec9b0; }
-  .highlight .s     { color: #ce9178; }
+  .highlight .c  { color: #6a9955; font-style: italic; }
+  .highlight .k  { color: #569cd6; }
+  .highlight .s  { color: #ce9178; }
   .highlight .mi,
-  .highlight .mf    { color: #b5cea8; }
-  .highlight .o     { color: #d4d4d4; }
-  .highlight .c     { color: #6a9955; font-style: italic; }
-  .highlight .p     { color: #d4d4d4; }
-  .highlight .n     { color: #9cdcfe; }
-  .highlight .nf    { color: #dcdcaa; }
+  .highlight .mf { color: #b5cea8; }
+  .highlight .nb { color: #4ec9b0; }
+  .highlight .nf { color: #dcdcaa; }
+  .highlight .o  { color: #d4d4d4; }
+  .highlight .p,
+  .highlight .n  { color: #e5e7eb; }
 }
 
-/* --- Scrollbar Style (Dark only, optional) --- */
+/* Scrollbar styling (Dark mode) */
 @media (prefers-color-scheme: dark) {
-  .highlight::-webkit-scrollbar {
+  figure.highlight pre::-webkit-scrollbar {
     height: 0.5em;
   }
-  .highlight::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.15);
+  figure.highlight pre::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 3px;
   }
-  .highlight::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+  figure.highlight pre::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.35);
   }
 }
