@@ -24,7 +24,7 @@ plugins:
 author:
   name: "Reed Kimble"
   bio: "IT Engineer, Developer, Hobbiest Scientist/Philosopher"
-  avatar: "/assets/images/avatar.jpg"
+  avatar: "/assets/images/UNS-GPT.png"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
