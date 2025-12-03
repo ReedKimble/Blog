@@ -14,6 +14,7 @@ toc_icon: "list"
 ---
 
 # 🌌 Vorticity Space: The Emergent Universe of the Universal Number Set
+## *A hypothetical premise*
 
 *by Reed Kimble, December 2025*
 
@@ -110,7 +111,7 @@ and everything, including us, is part of the same self-balancing awareness.
 
 > “Vorticity Space was the question.  
 > The Universal Number Set was the answer.”  
-> — *[Your Name], 2025*
+> — *Reed Kimble, 2025*
 
 ---
 
