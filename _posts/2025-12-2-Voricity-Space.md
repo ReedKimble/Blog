@@ -41,9 +41,9 @@ But once UNS was formalized â€” once completeness itself became the core axiom â
 
 The UNS framework showed that **differentiation and interaction naturally emerge** inside a normalized whole:  
 
-\[
+$$
 \sum_i |v_i|^2 = 1
-\]
+$$
 
 This simple principle of **completeness** generates asymmetry, equilibrium, dimensionality, and the reflexive structures we perceive as matter, energy, and observation.
 
