@@ -2,7 +2,7 @@
 layout: post
 title: "AI Art - Part IV"
 date: 2025-12-7
-categories: ai, logic
+categories: ai logic
 tags: [ai, logic, philosophy]
 layout: single
 author_profile: true
