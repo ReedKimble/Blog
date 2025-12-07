@@ -1,3 +1,18 @@
+---
+layout: post
+title: "AI Art - Part II"
+date: 2025-12-7
+categories: ai, logic
+tags: [ai, logic, philosophy]
+layout: single
+author_profile: true
+read_time: true
+toc: false
+toc_label: "Contents"
+toc_icon: "list"
+
+---
+
 # **AI Art, Human Creativity, and the Future of Expression**
 ## **Part 2: Tracing Analogy, Formal Logic, and the Collapse of Anti-AI Arguments (with Citations)**
 
