@@ -138,4 +138,4 @@ But these forms are accepted—because intention and interpretation, not mechani
 - Galanter, P. (2012). *What is Generative Art? Complexity Theory as a Context for Art Theory.*
 - Ramesh, A. et al. (2022). *Hierarchical Text-Conditional Image Generation with CLIP Latents.*
 
-Part III https://reedkimble.github.io/Blog/ai/logic/2025/12/07/AI-Art-Part-III.html
+Part III [https://reedkimble.github.io/Blog/ai/logic/2025/12/07/AI-Art-Part-III.html]
