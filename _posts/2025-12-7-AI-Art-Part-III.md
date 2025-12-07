@@ -127,4 +127,4 @@ The same forces will shape the creative industry.
 - Samuelson, P. (2016). *Copyright and Freedom of Expression.*
 - Zhou, Y. et al. (2023). *Large Language Models as Programming Aids.*
 
-Part IV [https://reedkimble.github.io/Blog/ai,/logic/2025/12/07/AI-Art-Part-IV.html]
+<a href="https://reedkimble.github.io/Blog/ai/logic/2025/12/07/AI-Art-Part-IV.html">[  Final: Part IV  ]</a>
