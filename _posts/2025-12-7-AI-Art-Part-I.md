@@ -1,3 +1,18 @@
+---
+layout: post
+title: "AI Art - Part I"
+date: 2025-12-7
+categories: ai, logic
+tags: [ai, logic, philosophy]
+layout: single
+author_profile: true
+read_time: true
+toc: false
+toc_label: "Contents"
+toc_icon: "list"
+
+---
+
 # **AI Art, Human Creativity, and the Future of Expression**
 ## **Part 1: Introduction & Core Arguments Against AI Art (with Citations)**
 
