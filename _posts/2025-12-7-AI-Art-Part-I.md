@@ -91,4 +91,4 @@ AI art is not a threat to cultural meaning—it is the next stage in the democra
 - McLuhan, H. (1964). *Understanding Media.*
 - Pinch, T., & Trocco, F. (2004). *Analog Days: The Invention and Impact of the Moog Synthesizer.*
 
-Part II [https://reedkimble.github.io/Blog/ai/logic/2025/12/07/AI-Art-Part-II.html]
+<a href="https://reedkimble.github.io/Blog/ai/logic/2025/12/07/AI-Art-Part-II.html">[  Next: Part II  ]</a>
