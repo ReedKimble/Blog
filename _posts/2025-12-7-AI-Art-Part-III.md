@@ -2,7 +2,7 @@
 layout: post
 title: "AI Art - Part III"
 date: 2025-12-7
-categories: ai, logic
+categories: ai logic
 tags: [ai, logic, philosophy]
 layout: single
 author_profile: true
@@ -127,3 +127,4 @@ The same forces will shape the creative industry.
 - Samuelson, P. (2016). *Copyright and Freedom of Expression.*
 - Zhou, Y. et al. (2023). *Large Language Models as Programming Aids.*
 
+Part IV [https://reedkimble.github.io/Blog/ai,/logic/2025/12/07/AI-Art-Part-IV.html]
