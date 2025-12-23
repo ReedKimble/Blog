@@ -2,7 +2,7 @@
 layout: post
 title: "Emergent Structural Invariants"
 date: 2025-12-23
-categories: "[ESIs]"
+categories: ESIs
 tags: [structure, coherence, invariants, constraint, truth]
 layout: single
 author_profile: true
