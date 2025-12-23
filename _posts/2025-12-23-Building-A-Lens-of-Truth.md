@@ -27,7 +27,7 @@ The paper is intentionally brief. It is designed to transfer meaning rather than
 
 The full paper is available in the repository here:
 
-**[Building A Lens of Truth — Paper](../assets/papers/Building&nbsp;A&nbsp;Lens&nbsp;of&nbsp;Truth.pdf)**
+**[Building A Lens of Truth — Paper](../assets/papers/Building%20A%20Lens%20Of%20Truth.pdf)**
 
 (Placement in the repository reflects stability, not priority. The document may be revised, replaced, or removed as understanding sharpens.)
 
