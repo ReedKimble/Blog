@@ -2,7 +2,7 @@
 layout: post
 title: "Building A Lens of Truth"
 date: 2025-12-23
-categories: [structure]
+categories: "[structure]"
 tags: [truth, coherence, invariants, lens]
 layout: single
 author_profile: true
