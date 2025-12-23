@@ -19,6 +19,12 @@ docs:
         url: "/about/"
       - title: "How to read posts"
         url: "/using-this-blog/"
+  - title: "Structure & Coherence"
+    children:
+      - title: "Structure"
+        url: "/structure/"
+      - title: "ESIs"
+        url: "/ESIs/"
   - title: "LLM & Coding"
     children:
       - title: "LLM Workflow"
