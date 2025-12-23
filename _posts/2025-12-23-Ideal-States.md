@@ -28,7 +28,7 @@ The paper treats ideal states as descriptive rather than normative. What appears
 
 The full paper is available in the repository here:
 
-**[Ideal States — Paper](../Assets/Papers/Ideal-States.md)**
+**[Ideal States — Paper](https://github.com/ReedKimble/Blog/blob/f69dece498e26f12b6268383cb0af7a7f1d9cb63/assets/papers/Ideal%20States.pdf)**
 
 (Placement in the repository reflects stability, not priority. The document may be revised, replaced, or removed as understanding sharpens.)
 
