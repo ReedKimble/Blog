@@ -4,7 +4,7 @@ layout: post
 title: "Ideal States"
 date: 2025-12-23
 categories: structure
-tags: [structure, attractors, coherence, stability, ideal]
+tags: [attractors, coherence, stability, ideal]
 layout: single
 author_profile: true
 read_time: true
