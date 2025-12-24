@@ -25,7 +25,7 @@ The problem was the numbers.**
 
 We were asking atomic numbers to carry multi-dimensional, state-dependent, sometimes contradictory information, and then punishing them for not being able to do it gracefully.
 
-So I built something new.
+So I went back to the beginning to determine what numbers really are, and then worked forward through what emerged. Following is one possible result.
 
 This is the first public introduction to **UNS**, the *Universal Number Set*—a foundation for numerical reasoning that treats numbers not as isolated atoms but as structured, distributed objects with a meaningful internal universe.
 
