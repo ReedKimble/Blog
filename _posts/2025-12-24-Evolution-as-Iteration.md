@@ -1,5 +1,4 @@
 ---
-
 layout: post
 title: "Evolution as Iteration"
 date: 2025-12-24
@@ -11,7 +10,8 @@ read_time: true
 toc: false
 toc_label: "Contents"
 toc_icon: "list"
-----------------
+
+---
 
 ## Evolution as Iteration
 
