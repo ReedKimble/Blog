@@ -6,7 +6,7 @@ description: "A workspace for recording observations of structure across domains
 url: "https://reedkimble.github.io"
 baseurl: "/Blog"
 repository: "ReedKimble/Blog"
-permalink: /:categories/:year/:month/:day/:title/
+permalink: /Blog/:categories/:year/:month/:day/:title/
 
 # Theme Settings
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
