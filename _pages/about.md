@@ -44,7 +44,7 @@ You will find:
 
 You will not find:
 
-* Tutorials, how-to guides, or opinion pieces
+* Tutorials, how-to guides, or opinion pieces (unless they pertain to the protodomain or Vorticity Space/UNS)
 * Normative claims about what should be done
 * Attempts to persuade or resolve debates
 * Appeals to authority, novelty, or optimization
