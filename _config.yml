@@ -1,8 +1,8 @@
 # Site Settings
 title: "Reedo's Blog"
-subtitle: "A personal blog on various topics of interest"
+subtitle: "Notes on structure, constraint, coherence, and other lines of inquiry"
 name: "Reed Kimble"
-description: "A personal blog on various topics of interest"
+description: "A workspace for recording observations of structure across domains"
 url: "https://reedkimble.github.io"
 baseurl: "/Blog"
 repository: "ReedKimble/Blog"
@@ -23,7 +23,7 @@ plugins:
 # Site Author
 author:
   name: "Reed Kimble"
-  bio: "IT Engineer, Developer, Hobbiest Scientist/Philosopher"
+  bio: "IT Engineer · Developer · Observer of Structure"
   avatar: "/assets/images/UNS-GPT.png"
   links:
     - label: "GitHub"
