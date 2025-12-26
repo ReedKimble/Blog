@@ -14,8 +14,6 @@ toc_icon: "list"
 
 ---
 
-## God Before Gods: Coherence, Constraint, and the Origin of Divinity
-
 This post introduces a short paper titled **“God Before Gods: Coherence, Constraint, and the Origin of Divinity.”**
 
 The paper proposes a reversal of a common modern assumption: that gods were invented primarily as explanations for natural phenomena early humans could not yet describe.
