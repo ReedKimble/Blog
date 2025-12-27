@@ -36,7 +36,7 @@ If the paper feels abstract, that is because it operates at the grammatical laye
 
 The full paper is available here:
 
-**[A Structural Ontology of Physical Reality — Paper](https://github.com/ReedKimble/Blog/blob/70230bd0df35f81047a51b5f377db997854a578d/assets/papers/A%20Structural%20Ontology%20Of%20Physical%20Reality.pdf)**
+**[A Structural Ontology of Physical Reality — Paper](https://github.com/ReedKimble/Blog/blob/dba1aa0e38e8d8ac4065c3083f0d0e008fec3ab4/assets/papers/A%20Structural%20Ontology%20Of%20Physical%20Reality.pdf)**
 
 (Placement in the repository reflects stability, not priority. The document may be revised, replaced, or removed as understanding sharpens.)
 
