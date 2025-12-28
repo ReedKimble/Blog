@@ -38,9 +38,9 @@ Together, the three papers describe a single structural grammar expressed across
 
 The full papers are available in the repository here:
 
+* **[Collapse as Integration — Paper](https://github.com/ReedKimble/Blog/blob/main/assets/papers/Collapse%20As%20Integration.pdf)**
 * **[Emergent Axes of Inquiry and Integration — Paper](https://github.com/ReedKimble/Blog/blob/main/assets/papers/Emergent%20Axes%20Of%20Inquiry%20And%20Integration.pdf)**
 * **[Binding Gravity — Paper](https://github.com/ReedKimble/Blog/blob/main/assets/papers/Binding%20Gravity.pdf)**
-* **[Collapse as Integration — Paper](https://github.com/ReedKimble/Blog/blob/main/assets/papers/Collapse%20As%20Integration.pdf)**
 
 (Placement in the repository reflects stability, not priority. Documents may be revised, replaced, or removed as understanding sharpens.)
 
