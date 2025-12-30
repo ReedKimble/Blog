@@ -2,7 +2,7 @@
 
 layout: post
 title: "Continuverse (Lens Application)"
-date: 2025-12-23
+date: 2025-12-30
 categories: structure
 tags: [coherence, non-terminality, continuverse, lens, protodomain]
 layout: single
