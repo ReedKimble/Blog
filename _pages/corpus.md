@@ -9,6 +9,11 @@ sidebar:
 
 # About This Corpus
 
+## Vorticity Space & UNS
+
+The core documents and initial downstream implementations are all located at:
+* *[https://github.com/ReedKimble/UNS](https://github.com/ReedKimble/UNS)* 
+
 ## Front Matter: How This Document Is Intended to Be Used
 
 This document is a descriptive review of a body of work, not an argument to be accepted, a theory to be adopted, or a position to be defended. It is intended to orient readers to what kind of object the corpus is, what problems it addresses structurally, and what kinds of expectations will lead to misinterpretation.
