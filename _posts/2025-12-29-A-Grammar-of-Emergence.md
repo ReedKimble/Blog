@@ -50,6 +50,12 @@ The full papers are available in the repository here:
 * **[After the One — Paper](https://github.com/ReedKimble/Blog/blob/5b2979af143f52664c73ad819d2a88f0bf5c4f11/assets/papers/After%20The%20One_%20Asymmetry%2C%20Closure%2C%20And%20The%20Non-terminality%20Of%20Evenness.pdf)**
 * **[Sacrifice as a Non-Computable Operator — Paper](https://github.com/ReedKimble/Blog/blob/5b2979af143f52664c73ad819d2a88f0bf5c4f11/assets/papers/Sacrifice%20As%20A%20Non-computable%20Operator%20In%20Closure%20Grammars.pdf)**
 
+#### Bathtime Addendum
+
+After initially publishing this post, I had a few additional thoughts in the tub.  The following captures the results:
+* **[Bathtime Addendum - Gradients of Σ and Loss-Selection in Living Systems](https://github.com/ReedKimble/Blog/blob/9acaee680301ed494da11f982511cbc5845ce866/assets/papers/Bathtime%20Addendum.pdf)**
+
+
 (Placement in the repository reflects stability, not priority. Documents may be revised, replaced, or removed as understanding sharpens.)
 
 ### Relationship to Other Writing
