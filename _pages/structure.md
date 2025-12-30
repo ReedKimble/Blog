@@ -10,5 +10,5 @@ sidebar:
 Posts regarding Structure in the Vorticity Space protodomain
 
 {% for post in site.categories.structure %}
-- [{{ post.title }}]({{ post.relative_url }})
+- [{{ post.title }}]({{ post.url | prepend: site.baseurl }})
 {% endfor %}
