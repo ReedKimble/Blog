@@ -1,6 +1,6 @@
 ---
 title: "Corpus"
-permalink: /Corpus/
+permalink: /corpus/
 layout: single
 author_profile: true
 sidebar:
