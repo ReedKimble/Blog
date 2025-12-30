@@ -10,6 +10,6 @@ sidebar:
 Posts regarding the Universal Number Set (UNS)
 
 {% for post in site.categories.uns %}
-- [{{ post.title }}]({{ post.url }})
+- [{{ post.title }}]({{ post.url | prepend: site.baseurl }})
 {% endfor %}
 
