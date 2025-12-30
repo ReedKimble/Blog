@@ -30,7 +30,7 @@ In this usage, *continuance* is not an assertion about time looping, memory pers
 
 The full paper is available in the repository here:
 
-**[Lens Application Demonstrating Non-Terminal Coherence Under Adversarial Perturbation — Paper](https://github.com/ReedKimble/Blog/blob/998940645970b8d10b7d1a4f49d05c8277fa3ef7/assets/papers/Lens%20Application%20And%20Emergent%20Invariant.pdf)**
+**[Lens Application Demonstrating Non-Terminal Coherence Under Adversarial Perturbation — Paper](https://github.com/ReedKimble/Blog/blob/b1bd6255bb731ccae32967096b7d0800245c237f/assets/papers/Lens%20Application%20And%20Emergent%20Invariant.pdf)**
 
 (Placement in the repository reflects stability, not priority. The document may be revised, replaced, or removed as understanding sharpens.)
 
