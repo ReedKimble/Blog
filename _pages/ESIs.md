@@ -10,5 +10,5 @@ sidebar:
 Emergent Structural Invariants (ESIs) are properties observed to arise repeatedly in systems that maintain coherence, closure, and correctly applied constraint. They are presented without ordering, hierarchy, or claim of completeness.
 
 {% for post in site.categories.ESIs %}
-- [{{ post.title }}]({{ post.url }})
+- [{{ post.title }}]({{ post.url | prepend: site.baseurl }})
 {% endfor %}
