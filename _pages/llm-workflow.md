@@ -12,5 +12,5 @@ Here I document a practical workflow for using large language models to build re
 This will eventually be a series: from initial idea, to specs, to implementation, with concrete examples and prompts.
 
 {% for post in site.categories.llm-workflow %}
-- [{{ post.title }}]({{ post.url }})
+- [{{ post.title }}]({{ post.url | prepend: site.baseurl }})
 {% endfor %}
