@@ -7,7 +7,7 @@ sidebar:
   nav: "docs"
 ---
 
-Posts regarding Structure in the Vorticity Space protodomain
+Posts regarding Structure defined in Protodomain Grammar
 
 {% for post in site.categories.structure %}
 - [{{ post.title }}]({{ post.url | prepend: site.baseurl }})
