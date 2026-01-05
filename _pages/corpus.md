@@ -11,7 +11,7 @@ sidebar:
 
 ## Open Doors
 
-This corpus currently contains, at the time of writing (01/01/2026), over 900 pages of text.  It is not intended to be consumed; it is meant to be observed where coherence holds for the reader.  As such, the following preface is offered as an orientation before engaging any part of the corpus.
+This corpus currently contains, at the time of writing (01/05/2026), over 1100 pages of text.  It is not intended to be consumed; it is meant to be observed where coherence holds for the reader.  As such, the following preface is offered as an orientation before engaging any part of the corpus.
 
 * **[Corpus Entry and Meta Preface](https://github.com/ReedKimble/Blog/blob/dd1a5841464ae1866b7028e88ec2b4c5ea6730b8/assets/papers/!_Corpus%20Entry_%20Meta%E2%80%91preface%20And%20Reader%20Guide.pdf)**
 
