@@ -20,6 +20,10 @@ This corpus currently contains, at the time of writing (01/01/2026), over 900 pa
 The core documents and initial downstream implementations are all located at:
 * *[https://github.com/ReedKimble/UNS](https://github.com/ReedKimble/UNS)* 
 
+## Complete Corpus Archive
+
+The complete corpus is parked at **[AGOS](https://github.com/ReedKimble/AGOS)** for reference and historical purposes.
+
 ## Front Matter: How This Document Is Intended to Be Used
 
 This document is a descriptive review of a body of work, not an argument to be accepted, a theory to be adopted, or a position to be defended. It is intended to orient readers to what kind of object the corpus is, what problems it addresses structurally, and what kinds of expectations will lead to misinterpretation.
